@@ -92,6 +92,7 @@ header h1 {
   src: url(../fonts/Heebo-Medium.ttf);
 }
 header p {
+  width: 90%;
   font-family: "Heebo-Medium";
   font-size: 1.25em;
   text-align: center;
