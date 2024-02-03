@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+}
+
+.maorgross {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.maorgross > img {
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+}
+
+@font-face {
+  font-family: "Satisfy-Regular";
+  src: url(../fonts/Satisfy-Regular.ttf);
+}
+.maorgross > h2 {
+  font-family: "Satisfy-Regular";
+  font-size: 1.5em;
+}
+
+@font-face {
+  font-family: "Heebo-Bold";
+  src: url(../fonts/Heebo-Bold.ttf);
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3.5em;
+  direction: rtl;
+  font-family: "Heebo-Bold";
+  font-size: 1.5em;
+}
+
+nav > ul > a {
+  color: black;
+  text-decoration: none;
+}
+
+ul > a:hover {
+  color: #1AE0EC;
+}
+
+.container {
+  margin-top: 5em;
+}
+
+header {
+  width: 100%;
+  height: 28em;
+  display: flex;
+  direction: rtl;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  opacity: 1;
+  background: url(../images/background/background.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Heebo-Black";
+  src: url(../fonts/Heebo-Black.ttf);
+}
+header h1 {
+  font-family: "Heebo-Black";
+  font-size: 5em;
+}
+
+@font-face {
+  font-family: "Heebo-Medium";
+  src: url(../fonts/Heebo-Medium.ttf);
+}
+header p {
+  font-family: "Heebo-Medium";
+  font-size: 1.25em;
+  text-align: center;
+}
+
+button {
+  width: 9.5em;
+  height: 2em;
+  background-color: #1AE0EC;
+  font-family: "Heebo-Medium";
+  font-size: 1em;
+  border-radius: 5em;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  opacity: 1;
+}
+
+.projectPic {
+  width: 100vw;
+  height: 65em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectPic > img {
+  width: 70%;
+  height: 70%;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.gallery-background {
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 100em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-box {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.gallery-box > h1 {
+  font-family: "Heebo-Black";
+  font-size: 2em;
+}
+
+.gallery-box > p {
+  width: 40%;
+  font-family: "Heebo-Regular";
+  font-size: 1.25em;
+}
+
+.gallery-container {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3em;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item > img {
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.gallery-item > h1 {
+  font-family: "Heebo-Medium";
+  font-size: 1.5em;
+}
+
+.gallery-item > p {
+  font-family: "Heebo-Regular";
+  font-size: 1em;
+}
+
+.logo-small > img {
+  width: 1.5em;
+  right: 1.5em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+footer > h2 {
+  margin: 0 1em;
+  color: #1AE0EC;
+  font-size: 1.25em;
+}
+
+@font-face {
+  font-family: "Heebo-Regular";
+  src: url(../fonts/Heebo-Regular.ttf);
+}
+.MG {
+  font-family: "Heebo-Regular";
+}
+
+@font-face {
+  font-family: "Heebo-Light";
+  src: url(../fonts/Heebo-Light.ttf);
+}
+.save {
+  font-family: "Heebo-Light";
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+  }
+  #nav-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    position: fixed;
+    right: 0;
+    margin-right: 2em;
+  }
+  #nav-phone > div {
+    width: 2.5em;
+    height: 0.25em;
+    background-color: #1AE0EC;
+  }
+  .maorgross h2 {
+    display: none;
+  }
+  .maorgross {
+    margin: 0 2em;
+  }
+  #open-close {
+    width: 100vw;
+    position: fixed;
+    flex-direction: column;
+    gap: 0;
+    justify-content: end;
+    margin-top: 12em;
+    gap: 1em;
+    background-color: white;
+    display: none;
+    text-align: center;
+  }
+  ul > a > li {
+    text-align: center;
+  }
+  header > h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  header > p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .logo {
+    height: 2.75em;
+  }
+  .logo > img {
+    width: 2.75em;
+    height: 2.75em;
+  }
+  .gallery-item {
+    gap: 1.5em;
+  }
+  .gallery-background {
+    height: 100%;
+  }
+  .gallery-box {
+    width: 90%;
+    height: 100%;
+    margin: 7em auto;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 3em;
+  }
+  footer {
+    font-size: 0.5em;
+  }
+}
+.aboutme {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 1.5em;
+  margin: 7em auto;
+}
+
+.aboutme > img {
+  width: 8.75em;
+  height: 8.75em;
+  border-radius: 100%;
+}
+
+.aboutme > h1 {
+  font-family: "Heebo-Black";
+  font-size: 2em;
+}
+
+.aboutme > p {
+  width: 40%;
+  font-family: "Heebo-Regular";
+  font-size: 1.25em;
+  direction: rtl;
+}
+
+.resume {
+  display: flex;
+  gap: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutme {
+    height: 100%;
+  }
+  .aboutme > p {
+    width: 90%;
+  }
+  .resume {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+.container-form {
+  width: 100%;
+  height: 60em;
+  display: flex;
+  flex-direction: row;
+  background-color: #3A3A3A;
+  justify-content: space-evenly;
+}
+
+.container-form > img {
+  height: 60%;
+}
+
+.container-form > div {
+  width: 34em;
+  height: 40em;
+  color: white;
+  direction: rtl;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-form > div > h1 {
+  font-family: "Heebo-Black";
+  font-size: 2.25em;
+}
+
+.container-form > div > p {
+  font-family: "Heebo-Regular";
+  font-size: 1.25em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Heebo-Bold";
+  font-size: 1.25em;
+}
+
+input {
+  width: 100%;
+  height: 3.125em;
+  border-bottom: 4px solid #1AE0EC;
+}
+
+input[type=submit] {
+  width: 7em;
+  height: 2.5em;
+  background-color: #1AE0EC;
+  font-family: "Heebo-Bold";
+  font-size: 1em;
+  border-radius: 3em;
+  text-align: center;
+  border: unset;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-form {
+    height: 60em;
+    flex-direction: column;
+  }
+  .container-form > div {
+    width: 34em;
+    height: 40em;
+    color: white;
+    direction: rtl;
+    margin: 5em auto;
+  }
+  .container-form > img {
+    width: 45%;
+    height: 25%;
+  }
+  .container-form > div {
+    width: 90%;
+  }
+}
+.contant-info {
+  width: 100%;
+  height: 12.5em;
+  display: flex;
+  background-color: #1AE0EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+  font-family: "Heebo-Regular";
+  font-size: 0.75em;
+}
+
+.contant-info > a {
+  color: black;
+  text-decoration: none;
+}
+
+.contant-info > a > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.contant-info > a > div > img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.contant-info > a > div > img[alt=facebook] {
+  width: 22px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contant-info {
+    width: 100%;
+    height: 40.5em;
+    gap: 0;
+    font-size: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1);
+    -ms-grid-column-align: center;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 8em auto;
+}
+
+.whatsapp-logo {
+    position: absolute;
+    top: 3.5em;
+    left: 3.5em;
+}
+
+.border-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22vw;
+    border-bottom: 1em solid #FDBD03;
+}
+
+
+.whatsapp-logo {
+    width: 6em;
+    height: 6em;
+    background: #FDBD03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.img {
+    width: 45vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.name-email {
+    display: flex;
+    gap: 1em;
+}
+
+@font-face {
+    font-family: "Heebo-Black";
+    src: url(fonts/Heebo/static/Heebo-Black.ttf);
+}
+
+h1 {
+    width: 45%;
+    text-align: right;
+    font-family: "Heebo-Black";
+    font-size: 4em;
+    color: #FDBD03;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: "Heebo-Regular";
+    src: url(fonts/Heebo/static/Heebo-Regular.ttf);
+}
+
+p {
+    width: 45%;
+    text-align: right;
+    font-size: 1.25em;
+    font-family: "Heebo-Regular";
+    color: #020253;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: "Heebo-Bold";
+    src: url(fonts/Heebo/static/Heebo-Bold.ttf);
+}
+
+label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: "Heebo-Bold";
+    font-size: 1em;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input,
+textarea {
+    min-height: 3.125em;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: 0;
+    border-bottom: 0.25em solid #FDBD03;
+}
+
+textarea {
+    height: 10em;
+}
+
+#submit {
+    width: 10em;
+    text-align: center;
+    font-family: "Heebo-Bold";
+    font-size: 1.375em;
+    letter-spacing: 0.02em;
+    color: #000000;
+    opacity: 1;
+    background: #FDBD03;
+}
+
+.border-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55vw;
+    border-bottom: 18px solid #FDBD03;
+}
+
+.social-media-logo {
+    position: absolute;
+    bottom: 3.125em;
+    left: 3.125em;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.3em;
+}
+
+.logo {
+    width: 6em;
+    height: 6em;
+    background: #FDBD03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.logo>img {
+    width: 2em;
+    height: 2em;
+}
+
+@media screen and (max-width:1200px) {
+
+    body {
+        height: 120vh;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .border-top {
+        width: 85vw;
+        border-bottom: 0.625em solid #FDBD03;
+    }
+
+    .whatsapp-logo {
+        display: none;
+
+    }
+
+    .img {
+        width: 100vw;
+        height: 15%;
+        justify-content: center;
+        margin: 3.5em auto;
+    }
+
+    .img>img {
+        width: 20%;
+        height: 100%;
+    }
+
+    .container-form {
+        width: 80vw;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+    }
+
+    .name-email {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    p {
+        width: 100%;
+        font-size: 0.7em;
+        text-align: center;
+    }
+
+    label {
+        width: 100%;
+        height: 100%;
+        font-size: 0.7em;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        height: 100%;
+        min-height: 2.5em;
+    }
+
+    textarea {
+        min-height: 5em;
+    }
+
+    #submit {
+        width: 80vw;
+        font-size: 1.3em;
+        max-height: 5em;
+    }
+
+    .social-media-logo {
+        width: 100vw;
+        gap: 1em;
+        position: absolute;
+        bottom: -20vh;
+        left: 0;
+        margin: 1.5em auto;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 2.5em;
+        height: 2.5em;
+        margin: 0;
+    }
+
+    .logo>img {
+        width: 1.25em;
+        height: 1.25em;
+    }
+
+    .border-bottom {
+        position: absolute;
+        bottom: -20vh;
+        width: 100vw;
+        border-bottom: 0.625em solid #FDBD03;
+    }
+}

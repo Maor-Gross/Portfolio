@@ -1,0 +1,52 @@
+.aboutme {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    margin: 7em auto;
+}
+
+.aboutme>img {
+    width: 8.75em;
+    height: 8.75em;
+    border-radius: 100%;
+}
+
+.aboutme>h1 {
+    font-family: "Heebo-Black";
+    font-size: 2em;
+}
+
+.aboutme>p {
+    width: 40%;
+    font-family: "Heebo-Regular";
+    font-size: 1.25em;
+    direction: rtl;
+}
+
+.resume {
+    display: flex;
+    gap: 3em;
+}
+
+@media screen and (max-width:1200px) {
+    .aboutme {
+        height: 100%;
+
+    }
+
+    .aboutme>p {
+        width: 90%;
+    }
+
+    .resume {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+}

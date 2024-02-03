@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+}
+
+.maorgross {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.maorgross>img {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}
+
+@font-face {
+    font-family: "Satisfy-Regular";
+    src: url(fonts/Satisfy-Regular.ttf)
+}
+
+.maorgross>h2 {
+    font-family: "Satisfy-Regular";
+    font-size: 1.5em;
+}
+
+@font-face {
+    font-family: "Heebo-Bold";
+    src: url(fonts/Heebo-Bold.ttf);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5em;
+    direction: rtl;
+    font-family: "Heebo-Bold";
+    font-size: 1.5em;
+}
+
+ul>li:hover {
+    color: #1AE0EC;
+}
+
+.container {
+    margin-top: 5em;
+}
+
+header {
+    width: 100vw;
+    height: 28em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    opacity: 1;
+    background: url(../images/background/background.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+@font-face {
+    font-family: "Heebo-Black";
+    src: url(fonts/Heebo-Black.ttf);
+}
+
+header h1 {
+    font-family: "Heebo-Black";
+    font-size: 5em;
+}
+
+@font-face {
+    font-family: "Heebo-Medium";
+    src: url(fonts/Heebo-Medium.ttf);
+}
+
+header p {
+    font-family: "Heebo-Medium";
+    font-size: 1.25em;
+}
+
+a {
+    margin: 1em;
+}
+
+button {
+    width: 9.5em;
+    height: 2em;
+    background-color: #1AE0EC;
+    font-family: "Heebo-Medium";
+    font-size: 1em;
+    border-radius: 5em;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.projectPic {
+    width: 100vw;
+    height: 65em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectPic>img {
+    width: 70%;
+    height: 70%;
+    box-shadow: 0px 0px 40px #00000066;
+    opacity: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+footer>h2 {
+    margin: 0 1em;
+    color: #1AE0EC;
+    font-size: 1.25em;
+}
+
+@font-face {
+    font-family: "Heebo-Regular";
+    src: url(fonts/Heebo-Regular.ttf);
+}
+
+.MG {
+    font-family: "Heebo-Regular";
+}
+
+@font-face {
+    font-family: "Heebo-Light";
+    src: url(fonts/Heebo-Light.ttf);
+}
+
+.save {
+    font-family: "Heebo-Light";
+}
+
+@media screen and (max-width:1200px) {
+
+    nav {
+        justify-content: space-between;
+        position: fixed;
+        background-color: white;
+    }
+
+    #nav-phone {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        position: fixed;
+        right: 0;
+        margin-right: 2em;
+    }
+
+    #nav-phone>div {
+        width: 2.5em;
+        height: 0.25em;
+        background-color: #1AE0EC;
+    }
+
+    .maorgross h2 {
+        display: none;
+    }
+
+    .maorgross {
+        margin: 0 2em;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 0;
+        justify-content: end;
+        margin-top: 12em;
+        margin-right: 1.25em;
+        gap: 1em;
+        background-color: white;
+        display: none;
+    }
+
+    header>h1 {
+        font-size: 2.8em;
+        text-align: center;
+    }
+
+    header>p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .logo {
+        height: 2.75em;
+    }
+
+    .logo>img {
+        width: 2.75em;
+        height: 2.75em;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    button {
+        width: 9em;
+        height: 1.5em;
+        background-color: #1AE0EC;
+        font-family: "Heebo-Medium";
+        font-size: 0.75em;
+        border-radius: 5em;
+    }
+
+    .projectPic {
+        height: 20em;
+    }
+
+    .projectPic>img {
+        height: 40%;
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+
+}
