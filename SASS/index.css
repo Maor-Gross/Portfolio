@@ -280,6 +280,7 @@ footer > h2 {
     text-align: center;
   }
   header > p {
+    width: 90%;
     font-size: 1em;
     text-align: center;
   }
