@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 634px;
+    background: #0EE1E1;
+    opacity: 1;
+    display: flex;
+}
+
+#whatsapp {
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.whatsapp {
+    width: 53px;
+    height: 53px;
+}
+
+header>.box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>.box>img {
+    width: 364px;
+    height: 276px;
+}
+
+header>section {
+    direction: rtl;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+@font-face {
+    font-family: "Heebo-Black";
+    src: url("../page-7/fonts/Heebo/static/Heebo-Black.ttf");
+}
+
+header>section>h1 {
+    font-family: "Heebo-Black";
+    font-size: 66px;
+}
+
+@font-face {
+    font-family: "Heebo-Regular";
+    src: url("./fonts/Heebo/static/Heebo-Regular.ttf");
+}
+
+header>section>p {
+    width: 60%;
+    font-family: "Heebo-Regular";
+    font-size: 20px;
+}
+
+.about {
+    margin: 50px auto;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.item {
+    height: 329px;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#location {
+    height: 54px;
+}
+
+#magic {
+    height: 74px;
+}
+
+
+
+.item>h1 {
+    font-family: "Heebo-Black";
+    font-size: 30px;
+    color: #0EE1E1;
+}
+
+.item>p {
+    width: 70%;
+    font-family: "Heebo-Regular";
+    font-size: 15px;
+    text-align: center;
+}
+
+.form-map {
+    display: flex;
+}
+
+.map {
+    width: 55%;
+    height: 938px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0EE1E1;
+}
+
+iframe {
+    width: 90%;
+    height: 90%;
+}
+
+.container-form {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F0FFFF;
+    opacity: 1;
+}
+
+.form-box {
+    height: 614px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-box>h1 {
+    font-family: "heebo-black";
+    font-size: 46px;
+}
+
+.form-box>p {
+    width: 90%;
+    font-family: "heebo-regular";
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: "Heebo-Bold";
+    src: url(./fonts/Heebo/static/Heebo-Bold.ttf);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: "Heebo-Bold";
+    font-size: 13px;
+
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    margin-top: 3px;
+    border-bottom: 4px solid #0EE1E1;
+    background-color: #E5EEFF;
+}
+
+input#submit {
+    font-family: "Heebo-Bold";
+    font-size: 20px;
+    background-color: #0EE1E1;
+}
+
+#massage {
+    height: 145px;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 18px solid #0EE1E1;
+}
+
+footer>div {
+    width: 95px;
+    height: 95px;
+    background-color: #0EE1E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+
+footer>div>img {
+    width: 31px;
+    height: 31px;
+}
+
+footer>div>img#facebook {
+    width: 19px;
+    height: 32px;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    #whatsapp {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: 450px;
+        flex-direction: column-reverse;
+    }
+
+    header>section {
+        justify-content: unset;
+    }
+
+    header>.box>img,
+    header>section>h1,
+    header>section>p {
+        margin-right: 33px;
+    }
+
+    header>.box {
+        width: 100%;
+        height: 40%;
+        justify-content: right;
+    }
+
+    header>.box>img {
+        width: 78px;
+        height: 64px;
+    }
+
+    header>section {
+        width: 100%;
+        height: 60%;
+    }
+
+    header>section>h1 {
+        font-size: 33px;
+    }
+
+    header>section>p {
+        width: 75%;
+        font-size: 15px;
+    }
+
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .container-form {
+        height: 612px;
+
+    }
+
+    .form-box {
+        width: 80%;
+        height: 443px;
+    }
+
+    .form-box>h1 {
+        font-size: 32px;
+    }
+
+    .form-map {
+        flex-direction: column;
+    }
+
+    .container-form,
+    .map {
+        width: 100%;
+    }
+
+    .map {
+        height: 312px;
+    }
+
+    footer {
+        height: 137px;
+    }
+
+    footer>div {
+        width: 46px;
+        height: 46px;
+    }
+
+    footer>div>img {
+        width: 15px;
+        height: 15px;
+    }
+
+    footer>div>img#facebook {
+        width: 9px;
+        height: 17px;
+    }
+
+    input {
+
+        height: 36px;
+
+    }
+
+    #massage {
+        height: 104px;
+    }
+}

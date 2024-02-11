@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/main-style.css">
+    <title>main-8</title>
+</head>
+<nav>
+    <div class="maorgross">
+        <img src="../../images/profile/maor.jpg" alt="maor-gross-picture">
+        <h2>Maor Gross</h2>
+    </div>
+    <div id="nav-phone">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul id="open-close">
+        <a href="../../index.html">
+            <li>ראשי</li>
+        </a>
+        <a href="../../index.html#about-me">
+            <li>אודות</li>
+        </a>
+        <a href="../../index.html#projects">
+            <li>שירותים</li>
+        </a>
+        <a href="../../index.html#contant-info">
+            <li>צור קשר</li>
+        </a>
+    </ul>
+</nav>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>שם הפרויקט</h1>
+            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכה, בתחום הדפוס, ההדפסה
+                והפרסום.</p>
+            <div class="button">
+                <a href="../winrar/page-8.rar" download>
+                    <button>
+                        << להורדת הפרויקט</button>
+                </a>
+                <a href="page-8.html">
+                    <button>
+                        << לצפייה בפרויקט</button>
+                </a>
+                <div></div>
+        </header>
+        <div class="logo">
+            <img src="../../images/logo/img-HTML.png" alt="HTML">
+            <img src="../../images/logo/img-CSS.png" alt="CSS">
+            <img src="../../images/logo/img-JS.png" alt="JS">
+        </div>
+        <div class="projectPic">
+            <img src="./images/print screen.jpg" alt="project-pic">
+        </div>
+        <footer>
+            <h2 class="MG">Maor Gross</h2>
+            <h2 class="save">כל הזכויות שמורות Ⓒ</h2>
+        </footer>
+    </div>
+    <script>
+
+        window.addEventListener('resize', function () {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            if (screenWidth >= 1200) {
+                open_close.style.display = 'flex';
+            } else { open_close.style.display = 'none'; }
+        });
+
+        var nav_phone = document.getElementById('nav-phone');
+        var open_close = document.getElementById('open-close');
+        nav_phone.addEventListener('click', function () {
+            if (open_close.style.display === 'flex') {
+                open_close.style.display = 'none';
+            }
+            else {
+                open_close.style.display = 'flex';
+            }
+        })
+
+    </script>
+</body>
+
+</html>
