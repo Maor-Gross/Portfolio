@@ -12,6 +12,7 @@ nav {
     justify-content: space-evenly;
     position: absolute;
     top: 0;
+    border-top: 3px solid #00A1FF;
 }
 
 .maorgross {
@@ -222,11 +223,12 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #000;
+    border-bottom: 3px solid #00A1FF;
 }
 
 footer>h2 {
     margin: 0 1em;
-    color: #00A1FF;
+    color: white;
     font-size: 1.25em;
 }
 
