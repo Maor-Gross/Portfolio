@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   position: fixed !important;
   background-color: white;
@@ -425,6 +429,10 @@ input[type=submit] {
   border-radius: 3em;
   text-align: center;
   border: unset;
+}
+
+textarea {
+  border-bottom: 4px solid #1AE0EC;
 }
 
 #submit {
