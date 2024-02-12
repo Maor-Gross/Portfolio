@@ -13,6 +13,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     top: 0;
+    color: #3A3A3A;
 }
 
 .maorgross {
@@ -43,7 +44,7 @@ nav {
 }
 
 ul>a {
-    color: black;
+    color: #3A3A3A;
     text-decoration: none;
 }
 
@@ -77,6 +78,7 @@ header {
     background: url(../images/background/background.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    color: #3A3A3A;
 
 }
 
@@ -104,6 +106,7 @@ button {
     width: 9.5em;
     height: 2em;
     background-color: #1AE0EC;
+    color: #3A3A3A;
     font-family: "Heebo-Medium";
     font-size: 1em;
     border-radius: 5em;
@@ -216,7 +219,7 @@ footer>h2 {
 
     ul>a {
         text-align: center;
-        color: black;
+        color: #3A3A3A;
         text-decoration: none;
     }
 
