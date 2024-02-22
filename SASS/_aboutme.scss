@@ -32,7 +32,7 @@
 }
 
 .resume {
-    display: none;
+    display: none !important;
     gap: 3em;
 }
 
@@ -47,7 +47,7 @@
     }
 
     .resume {
-        display: none;
+        display: none !important;
         flex-direction: column;
         gap: 2em;
     }
