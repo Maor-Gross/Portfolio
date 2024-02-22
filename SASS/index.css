@@ -373,7 +373,7 @@ footer > h2 {
     width: 90%;
   }
   .resume {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 2em;
   }
