@@ -516,7 +516,7 @@ textarea {
     -ms-grid-column-align: center;
   }
 }
-#servis {
+.servis {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -524,25 +524,25 @@ textarea {
   flex-wrap: wrap;
 }
 
-#servis > div {
+.servis > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#servis > div > img {
+.servis > div > img {
   width: 8.75em;
   height: 8.75em;
   border-radius: 100%;
   display: flex;
 }
 
-#servis > div > h2 {
+.servis > div > h2 {
   font-family: "Heebo-Regular";
 }
 
-.servis {
+#servis {
   font-family: "Heebo-Black";
   font-size: 2em;
   color: #2D2C2F;
