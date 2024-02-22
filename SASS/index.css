@@ -544,8 +544,10 @@ textarea {
 }
 
 .servis > div > h2 {
+  width: 50%;
   font-family: "Heebo-Regular";
   font-size: 1.25em;
+  text-align: center;
 }
 
 #servis {
