@@ -12,8 +12,9 @@
 }
 
 .contant-info>a {
-    color: #3A3A3A;
+    color: #2D2C2F;
     text-decoration: none;
+
 }
 
 .contant-info>a>div {
@@ -26,6 +27,8 @@
 .contant-info>a>div>img {
     width: 2.5em;
     height: 2.5em;
+    box-shadow: 0px 3px 6px #2D2C2F;
+    border-radius: 30px;
 }
 
 @media screen and (max-width:1200px) {
