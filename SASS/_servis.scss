@@ -1,0 +1,32 @@
+#servis {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+#servis>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#servis>div>img {
+    width: 8.75em;
+    height: 8.75em;
+    border-radius: 100%;
+    display: flex;
+}
+
+#servis>div>h2 {
+    font-family: "Heebo-Regular";
+}
+
+.servis {
+    font-family: "Heebo-Black";
+    font-size: 2em;
+    color: #2D2C2F;
+    text-align: center;
+}
