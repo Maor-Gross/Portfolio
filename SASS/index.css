@@ -583,4 +583,14 @@ textarea {
   text-align: center;
   font-family: "Heebo-Regular";
   font-size: 1.25em;
+}
+
+p.servis_text {
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  p.servis_text {
+    width: 90%;
+  }
 }/*# sourceMappingURL=index.css.map */
