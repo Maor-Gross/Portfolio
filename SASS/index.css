@@ -506,8 +506,8 @@ textarea {
 }
 
 .contant-info > a > div > img {
-  width: 2.5em;
-  height: 2.5em;
+  width: 5em;
+  height: 5em;
   box-shadow: 0px 3px 6px #2D2C2F;
   border-radius: 30px;
 }
@@ -556,6 +556,11 @@ textarea {
   font-family: "Heebo-Regular";
   font-size: 1.25em;
   text-align: center;
+}
+
+.servis > div > p {
+  font-family: "Heebo-Regular";
+  direction: rtl;
 }
 
 #servis {
