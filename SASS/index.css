@@ -370,6 +370,13 @@ footer > h2 {
   gap: 3em;
 }
 
+#phone_number {
+  width: 250px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1200px) {
   .aboutme {
     height: 100%;
@@ -506,10 +513,10 @@ textarea {
 }
 
 .contant-info > a > div > img {
-  width: 5em;
-  height: 5em;
+  width: 4em;
+  height: 4em;
   box-shadow: 0px 3px 6px #2D2C2F;
-  border-radius: 30px;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 1200px) {
