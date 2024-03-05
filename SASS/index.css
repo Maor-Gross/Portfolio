@@ -22,7 +22,6 @@ nav {
 .maorgross {
   display: flex;
   align-items: center;
-  gap: 1em;
   color: #2D2C2F;
 }
 
@@ -30,6 +29,11 @@ nav {
   width: 4em;
   height: 4em;
   border-radius: 100%;
+}
+
+.maorgross > #url {
+  width: 5em !important;
+  height: 3em;
 }
 
 #url {
@@ -275,7 +279,7 @@ footer > h2 {
     display: none;
   }
   .maorgross {
-    margin: 0 2em;
+    margin: 0 1.5em;
   }
   #open-close {
     width: 100vw;
