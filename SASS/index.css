@@ -169,7 +169,7 @@ button {
 .gallery-background {
   background-color: #F6F6F6;
   width: 100%;
-  height: 175em;
+  height: 215em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,9 +263,48 @@ button {
   opacity: 1;
 }
 
+.cards-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 .cards {
   width: 50%;
   height: 50%;
+}
+
+.java-script-container {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+}
+
+.java-script-item {
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.javaScript {
+  width: 100%;
+  height: 40%;
+}
+
+#carouselExampleDark {
+  width: 90%;
+  max-width: 500px;
+}
+
+.carousel-item > iframe {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -375,6 +414,10 @@ footer > h2 {
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  .java-script-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   footer {
     font-size: 1em;
@@ -515,12 +558,12 @@ textarea {
 
 @media screen and (max-width: 1200px) {
   .container-form {
-    height: 60em;
+    height: 70em;
     flex-direction: column;
   }
   .container-form > div {
     width: 34em;
-    height: 40em;
+    height: 50em;
     color: white;
     direction: rtl;
     margin: 5em auto;
@@ -538,7 +581,7 @@ textarea {
 }
 .contant-info {
   width: 100%;
-  height: 12.5em;
+  height: 20em;
   display: flex;
   display: flex;
   justify-content: center;
@@ -560,17 +603,26 @@ textarea {
   gap: 1.5em;
 }
 
-.contant-info > a > div > img {
-  width: 4em;
-  height: 4em;
-  box-shadow: 0px 3px 6px #2D2C2F;
+.contant-info > a > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-color: #3DBDA4;
   border-radius: 50px;
+  box-shadow: 0px 3px 6px #2D2C2F;
+}
+
+.contant-info > a > div > div > img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1200px) {
   .contant-info {
     width: 100%;
-    height: 40.5em;
+    height: 55em;
     gap: 0;
     font-size: 0.5em;
     display: grid;
@@ -635,16 +687,6 @@ textarea {
 
 p.servis_text {
   width: 50%;
-}
-
-#carouselExampleDark {
-  width: 90%;
-  max-width: 500px;
-}
-
-.carousel-item > iframe {
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (max-width: 1200px) {
