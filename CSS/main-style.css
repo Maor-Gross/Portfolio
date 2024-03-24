@@ -62,7 +62,7 @@ ul>a>li:hover {
     color: #3DBDA4;
 }
 
-.container {
+.container-big {
     margin-top: 5em;
 }
 
@@ -177,7 +177,7 @@ footer>h2 {
         background-color: white;
     }
 
-    .container {
+    .container-big {
         height: 100vh;
     }
 

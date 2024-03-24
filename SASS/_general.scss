@@ -79,7 +79,8 @@ ul>a:hover {
     color: #3DBDA4;
 }
 
-.container {
+.container-big {
+
     margin-top: 5em;
     background-image: url(../images/background/background_emoji.png);
 }
@@ -128,13 +129,13 @@ header p {
 
 
 button {
-    width: 9.5em;
-    height: 2em;
-    color: white;
-    background-color: #3DBDA4;
-    font-family: "Heebo-Medium";
-    font-size: 1em;
-    border-radius: 5em;
+    width: 9.5em !important;
+    height: 2em !important;
+    color: white !important;
+    background-color: #3DBDA4 !important;
+    font-family: "Heebo-Medium" !important;
+    font-size: 1em !important;
+    border-radius: 5em !important;
 }
 
 .logo {
@@ -145,6 +146,24 @@ button {
     box-shadow: 0px 3px 6px #2D2C2F;
     opacity: 1;
 }
+
+.reviwes {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+    margin: 100px auto;
+
+}
+
+.reviwes>h1 {
+    font-family: "Heebo-Black";
+    font-size: 2em;
+}
+
+
 
 
 .projectPic {
@@ -165,7 +184,7 @@ button {
 .gallery-background {
     background-color: #F6F6F6;
     width: 100%;
-    height: 150em;
+    height: 175em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +192,6 @@ button {
 
 .gallery-box {
     width: 70%;
-    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -239,6 +257,32 @@ button {
 .logo-small>img {
     width: 1.5em;
     right: 1.5em;
+}
+
+.cards-container {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+}
+
+.cards-item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.cards {
+    width: 50%;
+    height: 50%;
 }
 
 footer {
@@ -367,6 +411,12 @@ footer>h2 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
         gap: 3em;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
     }
 
     footer {

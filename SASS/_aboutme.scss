@@ -40,10 +40,10 @@
 }
 
 #phone_number {
-    width: 250px;
-    height: 50px;
-    font-size: 1.5em;
-    font-weight: bold;
+    width: 250px !important;
+    height: 50px !important;
+    font-size: 1.5em !important;
+    font-weight: bold !important;
 }
 
 @media screen and (max-width:1200px) {
