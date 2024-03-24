@@ -21,6 +21,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
+    font-family: "Heebo-black";
 
 }
 
@@ -46,7 +47,7 @@
 @media screen and (max-width:1200px) {
     .contant-info {
         width: 100%;
-        height: 55em;
+        height: 100em;
         gap: 0;
         font-size: 0.5em;
         display: grid;
