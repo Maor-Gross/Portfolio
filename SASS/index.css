@@ -207,6 +207,8 @@ button {
 }
 
 .gallery-item {
+  width: 100%;
+  height: 620px;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -252,6 +254,8 @@ button {
 }
 
 .cards-item {
+  width: 100%;
+  height: 620px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,7 +286,8 @@ button {
 }
 
 .java-script-item {
-  height: 465px;
+  width: 100%;
+  height: 620px;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -290,6 +295,11 @@ button {
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
   border-radius: 10px;
   opacity: 1;
+}
+
+.java-script-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .javaScript {
